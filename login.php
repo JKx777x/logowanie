@@ -5,7 +5,7 @@ if (isset($_POST["login"])) {
     $password = $_POST['passowrd']
 
     if ($login == "admin" && $password == "tajnehaslo321") {
-        $_SESSION["login"] = $login;
+        $_SESSION["login"] = $login;👌
         header["location: wynik.php"];
     }
 }
@@ -28,3 +28,6 @@ $pol = mysqli_connect("localhost", "root", "", "laboratorium")
     </form>
 </body>
 </html> 
+<?php
+mysqli_close($pol)
+?>
